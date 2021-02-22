@@ -54,6 +54,9 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * Constructor, crea una lista para almacenar las personas en el curso.
+	 */
 	public Curso() {
 		listaAlumnos= new ArrayList<Persona>();
 	}
