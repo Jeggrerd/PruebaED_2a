@@ -16,6 +16,12 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * @param dni String, 9 caracteres, 8 numeros y una letra.
+	 * @param nombre String
+	 * @param apellido1 String
+	 * Constructor por Parametros de persona, con dni, nombre y apellido1
+	 */
 	public Persona(String dni, String nombre, String apellido1) {
 		this.dni = dni;
 		this.nombre = nombre;
