@@ -20,8 +20,26 @@ public class PersonaTest {
 
 	@Test
 	public void testSetDni() {
-		fail("Not yet implemented");
+		//Clase Valida
+		try {
+			p.setDni("14785236Q");
+		} catch (Exception e) {
+			e.printStackTrace();
+			
+		}
+		assertEquals ("14785236Q",p.getDni());
+		//Clase invalida
+		boolean lanzarExcepcion=true;
+		try {
+			p.setDni("147852369");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		assertTrue(lanzarExcepcion);
 	}
+	
+
 
 	@Test
 	public void testGetNombre() {
