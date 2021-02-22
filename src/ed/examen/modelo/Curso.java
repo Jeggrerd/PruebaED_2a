@@ -10,6 +10,10 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * @param dni String 9 digitos: 8 numeros y una letra.
+	 * @throws Exception: En caso de que el dni no tenga 9 digitos, se lanzara la excepcion.
+	 */
 	public void eliminarAlumno(String dni) throws Exception {
 		if(dni.length()==9) {//comprobar la longitud del dni
 			listaAlumnos.remove(new Persona(dni, "", "")); //solo hace falta el dni
