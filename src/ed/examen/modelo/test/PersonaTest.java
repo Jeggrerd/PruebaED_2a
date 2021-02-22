@@ -10,7 +10,14 @@ public class PersonaTest {
 	Persona p=new Persona("12345678P","Sergio","Sanz");
 	@Test
 	public void testPersonaStringStringString() {
-		fail("Not yet implemented");
+		
+		String dni="12345678P";
+		String nombre="Sergio";
+		String apellido1="Sanz";
+
+		assertEquals(dni,p.getDni());
+		assertEquals(nombre,p.getNombre());
+		assertEquals(apellido1,p.getApellido1());
 	}
 
 	@Test
