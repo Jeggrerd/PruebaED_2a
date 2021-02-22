@@ -42,6 +42,10 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * @param dni String de 9 caracteres, 8 numeros y una letra.
+	 * @throws Exception Cuando formato del dni introducido no se ajusta  las especificaciones. 9 caracteres, 8 numeros y una letra
+	 */
 	public void setDni(String dni) throws Exception {
 		//comprobacion de si el ultimo caracter es una letra
 		if(Character.isLetter(dni.charAt(dni.length()-1))) {
