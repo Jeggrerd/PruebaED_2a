@@ -28,7 +28,7 @@ public class CursoTest {
 	}
 
 	@Test
-	public void testEstaRegistrado() {
+	public void testEstaRegistrado() { //Lo subi a la vez que el de numero alumnos, lo resubo
 	
 		c.aniadirAlumno(p); //Meto el dni de p alñ añadirlo al curso.
 		
