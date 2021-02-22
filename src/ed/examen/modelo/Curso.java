@@ -50,7 +50,9 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 * */
-	public Integer numeroAlumnos() {return listaAlumnos.size();}
+	public Integer numeroAlumnos() {
+		return listaAlumnos.size();
+		}
 	
 	
 	public void mostrarTodos() {

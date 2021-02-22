@@ -1,5 +1,6 @@
 package ed.examen.modelo.test;
 
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;
@@ -8,7 +9,8 @@ import ed.examen.modelo.Curso;
 import ed.examen.modelo.Persona;
 
 public class CursoTest {
-
+	Persona p=new Persona("12345678P","Sergio","Sanz");
+	
 	public Curso c=new Curso();
 	@Test
 	public void testEliminarAlumno() {
@@ -17,7 +19,7 @@ public class CursoTest {
 
 	@Test
 	public void testAniadirAlumno() {
-		Persona p=new Persona("12345678P","Sergio","Sanz");
+		
 		int sizeBefore= c.numeroAlumnos();
 		c.aniadirAlumno(p);
 		int sizeAfter =c.numeroAlumnos();
@@ -27,7 +29,14 @@ public class CursoTest {
 
 	@Test
 	public void testEstaRegistrado() {
+	
+		c.aniadirAlumno(p); //Meto el dni de p alñ añadirlo al curso.
 		
+		boolean expected=true;
+		
+		assertEquals(expected, c.estaRegistrado("12345678P"));
+		
+						
 	}
 
 	@Test
@@ -37,7 +46,11 @@ public class CursoTest {
 
 	@Test
 	public void testNumeroAlumnos() {
-		fail("Not yet implemented");
+		int vacio= c.numeroAlumnos();
+		c.aniadirAlumno(p);
+		int añadiendo1 =c.numeroAlumnos();
+		
+		assertEquals(vacio, añadiendo1 -1);
 	}
 
 }
