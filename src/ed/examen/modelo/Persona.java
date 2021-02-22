@@ -68,6 +68,9 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * @param Asigna el nombre introducido (String) al parametro nombre del objeto persona.
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
