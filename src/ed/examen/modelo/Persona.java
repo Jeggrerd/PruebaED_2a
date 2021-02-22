@@ -78,6 +78,9 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * @return Devuleve un String con el apellido1 asociado al objeto Persona.
+	 */
 	public String getApellido1() {
 		return apellido1;
 	}
