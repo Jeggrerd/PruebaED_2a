@@ -29,11 +29,12 @@ public class PersonaTest {
 		}
 		assertEquals ("14785236Q",p.getDni());
 		//Clase invalida
-		boolean lanzarExcepcion=true;
+		boolean lanzarExcepcion=false;
 		try {
 			p.setDni("147852369");
 		} catch (Exception e) {
 			e.printStackTrace();
+			lanzarExcepcion=true;
 		}
 		
 		assertTrue(lanzarExcepcion);
