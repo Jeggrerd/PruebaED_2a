@@ -64,6 +64,9 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * @return Devuelve la longitud (numero) de alumnos que tiene un curso.
+	 */
 	public Integer numeroAlumnos() {
 		return listaAlumnos.size();
 		}
