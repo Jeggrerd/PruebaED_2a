@@ -58,6 +58,9 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * @return Devuelve el atributo nombre (String) asociado a la Persona.
+	 */
 	public String getNombre() {
 		return nombre;
 	}
