@@ -43,7 +43,7 @@ public class PersonaTest {
 
 	@Test
 	public void testGetNombre() {
-		fail("Not yet implemented");
+		assertEquals("Sergio",p.getNombre());
 	}
 
 	@Test
