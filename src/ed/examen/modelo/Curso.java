@@ -35,6 +35,10 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * @param dni, String de 9 caracteres, 8 numeros y una letra.
+	 * @return Devuelve booleano si el dni introducido esta dentro de la listaAlumnos.
+	 */
 	public Boolean estaRegistrado(String dni) {
 		int i =0;
 		Boolean encontrado=false;
