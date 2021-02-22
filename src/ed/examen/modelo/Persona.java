@@ -31,6 +31,9 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * @return Devuleve un String con el Dni.
+	 */
 	public String getDni() {
 		return dni;
 	}
